@@ -3,7 +3,7 @@ $(function(e) {
 	var table = $('#example').DataTable({
 		lengthChange: false,
 		buttons: [ 'copy', 'excel', 'pdf', 'colvis' ],
-		responsive: true,
+		responsive: false,
 		language: {
 			searchPlaceholder: 'Search...',
 			sSearch: '',
@@ -20,14 +20,20 @@ $(function(e) {
 			lengthMenu: '_MENU_',
 		}
 	});
+	table.buttons().container()
+	.appendTo( '#example_wrapper .col-md-6:eq(0)' );		
+	
+
 	$('#example2').DataTable({
 		responsive: true,
+		buttons: [ 'copy', 'excel', 'pdf', 'colvis' ],
 		language: {
 			searchPlaceholder: 'Search...',
 			sSearch: '',
 			lengthMenu: '_MENU_',
 		}
 	});
+
 	var table = $('#example-delete').DataTable({
 		responsive: true,
 		language: {

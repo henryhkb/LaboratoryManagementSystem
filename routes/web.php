@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\labResultController;
+use App\Http\Controllers\addIronStudyController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +28,13 @@ Route::get('/dashboard', function(){
 Route::get('/reproAssay', function(){
     return view('Hormones.reproductiveAssay');
 });
+Route::post('addLabResult', [labResultController::class, 'addLabResult']);
+Route::get('/ViewreproAssay', [labResultController::class, 'viewReproAssay']);
+
+
+//Route for Iron Study
+Route::get('/ironStudy', function(){
+    return view('IronStudy.studyIron');
+});
+Route::post('/addIronStudy', [addIronStudyController::class, 'addIronStudy']);
+Route::get('/viewIronStudy', [addIronStudyController::class,'viewIronStudy']);

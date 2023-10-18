@@ -18830,20 +18830,8 @@ table.dataTable {
       top: 60%; }
   table.dataTable tbody td.sorting_1 {
     background-color: #f3f4f7; }
-  table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child::before {
-    top: 9.5px;
-    left: 7px;
-    width: 16px;
-    height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-width: 0;
-    box-shadow: none;
-    background-color: #3858f9;
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff; }
+
+
   table.dataTable > tbody > tr.child ul.dtr-details {
     display: block; }
   table.dataTable > tbody > tr.child span.dtr-title {
