@@ -39,4 +39,5 @@ Route::get('/ironStudy', function(){
 });
 Route::post('/addIronStudy', [addIronStudyController::class, 'addIronStudy']);
 Route::get('/viewIronStudy', [addIronStudyController::class,'viewIronStudy']);
+Route::get('/ironStudyDetails/{id}', [addIronStudyController::class, 'ironStudyDetails']);
 //end of Route Iron Study

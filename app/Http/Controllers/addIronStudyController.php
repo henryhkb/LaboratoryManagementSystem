@@ -38,4 +38,9 @@ class addIronStudyController extends Controller
 
         return view("IronStudy.viewIronStudy", compact('viewIronStudy'));
     }
+
+    public function ironStudyDetails($id){
+        $ironStudyDetails = ironStudy::find($id);
+        return view("IronStudy.ironStudyDetails", compact('ironStudyDetails'));
+    }
 }
