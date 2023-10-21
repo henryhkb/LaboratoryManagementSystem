@@ -30,6 +30,7 @@ Route::get('/reproAssay', function(){
 });
 Route::post('addLabResult', [labResultController::class, 'addLabResult']);
 Route::get('/ViewreproAssay', [labResultController::class, 'viewReproAssay']);
+Route::get('/reproAssayDetails/{id}',[labResultController::class, 'reproAssayDetails']);
 
 
 //Route for Iron Study

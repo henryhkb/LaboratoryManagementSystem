@@ -56,7 +56,7 @@
                             <td>
                                 <a href=""><i class="text text-success fas fa-pencil-alt"></i></a>
                                 <a href=""><i class="text text-danger fas fa-trash-alt"></i></a>                                   
-                                <a href=""><i class="fas fa-eye"></i></a>                                   
+                                <a href="{{ url('reproAssayDetails', $reproAssay->id) }}"><i class="fas fa-eye"></i></a>                                   
                             </td>                        
                         </tr>
                         @endforeach
