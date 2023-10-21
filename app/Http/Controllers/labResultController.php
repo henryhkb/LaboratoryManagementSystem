@@ -42,6 +42,7 @@ class labResultController extends Controller
     }
 
     public function reproAssayDetails($id){
-        return view('Hormones.reproAssayDetails');
+        $reproAssayDetails = labResults::find($id);
+        return view('Hormones.reproAssayDetails', compact('reproAssayDetails'));
     }
 }
