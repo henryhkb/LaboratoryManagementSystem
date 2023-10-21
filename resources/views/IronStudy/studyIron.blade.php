@@ -4,7 +4,7 @@
 <div class="row row-sm" style="margin-top: 100px">
     
     <div class="col-md-12 col-xl-12 col-xs-12 col-sm-12">
-        <form action="{{url('/addIronStudy')}}" method="POST">
+        <form action="{{url('/addIronStudy')}}" method="post">
             @csrf
             <div class="card">
                 <div class="card-body">
@@ -14,23 +14,23 @@
 
                     <div class="form-group">
                         <label for="patient_id">Patient ID</label>
-                        <input type="text" name="patient_id" class="w-50 form-control" id="">
+                        <input type="text" name="patient_id" class="w-50 form-control" id="" required> 
                     </div>
 
                     <div class="row row-sm  mt-3">
                         <div class="col">
                             <label for="">DOB</label>
-                            <input type="date" name="dob" id="" class="form-control">
+                            <input type="date" name="date_of_birth" id="" class="form-control" required>
                         </div>
     
                         <div class="col">
                             <label for="">Lab No</label>
-                            <input type="text" name="Lab_number" id="" class="form-control" placeholder="Laboratory Number">
+                            <input type="text" name="Lab_number" id="" class="form-control" placeholder="Laboratory Number"  required>
                         </div>
     
                         <div class="col">
                             <label for="">Date</label>
-                            <input type="date" name="today_Date" id="" class="form-control">
+                            <input type="date" name="today_Date" id="" class="form-control"  required>
                         </div>
                     </div>
 
@@ -50,7 +50,7 @@
     
                         <div class="col">
                             <label for="">Drawn Date & Time</label>
-                            <input type="date" name="drawn_date_time" id="" class="form-control">
+                            <input type="date" name="drawn_date_time" id="" class="form-control"  required>
                         </div>
                     </div>
 
@@ -69,12 +69,18 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row fs-5">Ferritin</th>
                             <td class="half">
-                                <input type="number" name="Ferritin" class="form-control">
-                                <input type="number" name="Ferritin" class="form-control">
+                                <label for="">Ferritin Male</label><br>
+                                <label for="">Ferritin Female</label>
                             </td>
-                            <td><label for="ng/mL">ng/mL</label></td>
+
+                            <td class="half">
+                                <input type="number" name="Ferritin_Male" class="form-control"  required>
+                                <input type="number" name="Ferritin_Female" class="form-control"  required>
+                            </td>
+                            <td>
+                                <label for="ng/mL">ng/mL</label>
+                            </td>
                             
                             <td class="half">
                                 <label for="Male-Range">Male - (17.9 - 464.0)</label> <br/>
@@ -101,7 +107,7 @@
 
                           <tr>
                             <th scope="row fs-5">TIBC</th>
-                            <td><input type="text" name="TIBC" class="form-control"></td>
+                            <td><input type="text" name="TIBC" class="form-control"  required></td>
                             <td>
                                 <label for="ng/mL">umo/L</label><br/>
                                 <label for="ng/mL">umo/L</label>

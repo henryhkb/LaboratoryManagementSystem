@@ -14,21 +14,21 @@ return new class extends Migration
         Schema::create('iron_studies', function (Blueprint $table) {
             $table->id();
             $table->string('PATIENT_ID')->nullable();
-            $table->string('DOB');
-            $table->string('LAB_NUMBER');
-            $table->string('TODAY_DATE');
-            $table->string('GENDER');
-            $table->string('DRAWN_DATE_TIME');
-            $table->string('FERRITIN');
-            $table->string('IRON');
-            $table->string('TIBC');
-            $table->string('FOLATE');
-            $table->string('VITAMINB12');
-            $table->string('TRANSFERING');
-            $table->string('COMMENTS');
-            $table->string('VALIDATED_BY');
-            $table->string('_token');
-            $table->string('_method');
+            $table->string('DATE_OF_BIRTH')->nullable();
+            $table->string('LAB_NUMBER')->nullable();
+            $table->string('TODAY_DATE')->nullable();
+            $table->string('GENDER')->nullable();
+            $table->string('NAME')->nullable();
+            $table->string('DRAWN_DATE_TIME')->nullable();
+            $table->string('FERRITIN_MALE')->nullable();
+            $table->string('FERRITIN_FEMALE')->nullable();
+            $table->string('IRON')->nullable();
+            $table->string('TIBC')->nullable();
+            $table->string('FOLATE')->nullable();
+            $table->string('VITAMINB12')->nullable();
+            $table->string('TRANSFERING')->nullable();
+            $table->string('COMMENTS')->nullable();
+            $table->string('VALIDATED_BY')->nullable();
             $table->timestamps();
         });
     }

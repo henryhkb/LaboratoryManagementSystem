@@ -40,7 +40,7 @@
 		<link href="assets/css/skin-modes.css" rel="stylesheet">
 
         {{-- Font Awesome --}}
-        <link rel="stylesheet" href="{{asset('fontawesome-free/css/all.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/plugins/fontawesome-free/css/all.min.css')}}">
 
 		<!--- Sidemenu css -->
 		<link href="assets/css/sidemenu.css" rel="stylesheet">

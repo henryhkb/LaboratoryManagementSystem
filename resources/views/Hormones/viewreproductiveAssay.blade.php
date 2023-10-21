@@ -31,6 +31,7 @@
                             <th>TESTOSTERONE </th>
                             <th>COMMENTS </th>
                             <th>VALIDATED_BY </th>
+                            <th>ACTION </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -51,7 +52,12 @@
                             <td scope="row">{{ $reproAssay->OBSTROGEN }}</td>
                             <td scope="row">{{ $reproAssay->TESTOSTERONE }}</td>
                             <td scope="row">{{ $reproAssay->COMMENTS }}</td>
-                            <td scope="row">{{ $reproAssay->VALIDATED_BY }}</td>
+                            <td scope="row">{{ $reproAssay->VALIDATED_BY }}</td>                         
+                            <td>
+                                <a href=""><i class="text text-success fas fa-pencil-alt"></i></a>
+                                <a href=""><i class="text text-danger fas fa-trash-alt"></i></a>                                   
+                                <a href=""><i class="fas fa-eye"></i></a>                                   
+                            </td>                        
                         </tr>
                         @endforeach
                     </tbody>
